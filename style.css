@@ -1,0 +1,271 @@
+:root {
+    --helper: #ffa3a5;
+    --moderator: #ffb3f2;
+    --headmoderator: #ce76ff;
+    --administrator: #a421ff;
+}
+
+:root[data-theme="light"] {
+    --text: #140e25;
+    --background: #e6e4f6;
+    --primary: #322466;
+    --secondary: #a28ae3;
+    --accent: #7953e2;
+    --link-color: #007BFF;
+    --box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="dark"] {
+    --text: #e0daf1;
+    --background: #0b091b;
+    --primary: #a799db;
+    --secondary: #331c73;
+    --accent: #421daa;
+    --link-color: #007BFF;
+    --box-shadow: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--background);
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.role-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#PunishGuide {
+    text-align: center;
+}
+
+#PunishGuide a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.1s ease;
+}
+
+#PunishGuide a:hover {
+    transform: scale(1.2);
+}
+
+.role-links a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transition: transform 0.1s ease;
+    color: #e1dbf2;
+}
+
+.role-links a:hover {
+    transform: scale(1.2);
+}
+
+.role-links #Helper {
+    color: var(--helper);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.role-links #Moderator {
+    color: var(--moderator);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.role-links #HeadModerator {
+    color: var(--headmoderator);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.role-links #Administrator {
+    color: var(--administrator);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#InstaLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+#InstaLinks #ServerRules,
+#InstaLinks #DiscordRules
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#perms #serverPerms,
+#perms #discordPerms {
+    flex-direction: column;
+}
+
+.instalink,
+#perms .perm {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    transition: transform 0.15s ease;
+}
+
+#InstaLinks a:hover {
+    transform: scale(1.2);
+}
+
+/* #perms a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--background);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#perms a:hover {
+    background-color: var(--secondary);
+} */
+
+#punishment-details h2 {
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+#punishment-details p {
+    margin: 10px 0;
+}
+
+#punishment-details ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.area-rules {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#InstaLinks #ServerRules h1,
+#InstaLinks #DiscordRules h1 {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--text);
+}
+
+#page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+#desclink {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+#titlelink {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#titlelink:hover {
+    color: var(--accent);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--background);
+    color: var(--text);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.rule {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--background); /* Example variable, adjust as needed */
+    border: 1px solid var(--accent); /* Example variable, adjust as needed */
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--box-shadow); /* Example variable, adjust as needed */
+}
+
+.rule h1 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: var(--accent); /* Example variable, adjust as needed */
+}
+
+.rule p {
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    color: var(--text); /* Example variable, adjust as needed */
+}
+
+
+#scrollTopBtn{
+    color: var(--text);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 10px var(--box-shadow);
+    background-color: transparent;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+#scrollTopBtn:hover{
+    cursor:pointer;
+}
+
+#docLink{
+    text-decoration: none;
+    color: var(--link-color);
+}
